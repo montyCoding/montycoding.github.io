@@ -1,0 +1,33 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   align-content: center;
+}
+
+.footer-sm {
+    align-items: center;
+    align-content: center;
+
+
+    a {
+        color: $white;
+
+        i {
+            font-size: 2rem;
+            margin-left: 1rem;
+            
+
+            @include media-breakpoint-up(sm){
+                width: 1.6rem; 
+            }
+
+            
+        }
+    }
+}
